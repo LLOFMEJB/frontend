@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+    <!--
+        <form action="result.html" method="GET">
+      <div>
+        <label>İsim: <input type="text" name="isim" /></label><br />
+        <label>Soyisim: <input type="text" name="soyisim" /></label><br />
+      </div>
+      <div>
+        <label>Parola: <input type="password" name="parola" /></label>
+        <br /><br />
+        <input type="submit" />
+      </div>
+    </form>
+    -->
+
+    <form action="result.html" method="GET">
+      <div>
+        <label for="isim">İsim :</label>
+        <input id="isim" type="text" name="isim" placeholder="isminiz" />
+        <br />
+        <label for="soyisim">Soyisim:</label>
+        <input
+          id="soyisim"
+          type="text"
+          name="soyisim"
+          placeholder="soyisminiz"
+        />
+        <br />
+      </div>
+      <div>
+        <label for="şifre">Parola : </label>
+        <input
+          type="password"
+          name="parola"
+          id="şifre"
+          placeholder="şifreniz"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="">Cinsiyet:</label>
+        <input id="gender1" type="radio" name="gender" value="Erkek" />
+        <label for="gender1">Erkek</label>
+        <input id="gender2" type="radio" name="gender" value="Kadın" />
+        <label for="gender2">Kadın</label>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="">Favori Tatlınızı Belirtiniz</label>
+        <br /><br />
+        <input type="checkbox" name="meyve1" id="Elma" value="Elma" />
+        <label for="Elma">Elma</label>
+        <input type="checkbox" name="meyve2" id="Armut" value="Armut" />
+        <label for="Armut">Armut</label>
+        <input type="checkbox" name="meyve3" id="Kavun" value="Kavun" checked />
+        <label for="Kavun">Armut</label>
+        <input type="checkbox" name="meyve4" id="Kiraz" value="Kiraz" />
+        <label for="Kiraz">Kiraz</label>
+      </div>
+      <br />
+      <div>
+        <label for="age">Yaş:</label>
+        <input type="number" name="yaş" id="age" step="1" min="14" max="40" />
+      </div>
+      <br />
+      <div>
+        <label for="search">Ara:</label>
+        <input type="search" name="Arandı" id="search" placeholder="ara..." />
+      </div>
+      <br />
+      <div>
+        <label for="color">Renk Seç</label>
+        <input type="color" name="seçilen renk" id="color" />
+      </div>
+      <br />
+      <div>
+        <label for="tarih">Bir Tarih Seçiniz</label>
+        <input
+          type="date"
+          name="Seçilen tarih"
+          id="tarih"
+          min="1980-01-01"
+          max="2010-01-01"
+          value="1990-01-01"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="mail">Mail Adresiniz:</label>
+        <input
+          required
+          type="email"
+          name="kullanıcı mail adresi"
+          id="mail"
+          placeholder="adresim@gmail.com"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="dosya">Dosya seç:</label>
+        <input type="file" name="Kullanıcı dosyası" id="dosya">
+      </div>
+      <br>
+      <div>
+        <label for="telefon">Telefon Nu:</label>
+        <input type="tel" name="Kullanıcı cep nu" id="telefon" placeholder="544 333 44 55" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+      </div>
+      <br>
+      <div></div>
+      <br /><br />
+      <input type="reset" value="Resetle" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
