@@ -1,38 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <title>Survey Form</title>
-  </head>
-  <body>
-    <div id="form-container">
-      <header id="form-header">
-        <h1 id="form-title">Net<span>Flix</span></h1>
-        <h3 id="form-description">
-          Thank you for signing up at Netflix. Tell us more about yourself.
-        </h3>
-      </header>
-      <section id="survey-form-container">
-        <div id="survey-form">
-            <form action="result.html" method="GET" target="_blank">
+<link>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap"
+  rel="stylesheet" />
+<title>Survey Form</title>
+</head>
 
-            </form>
+<body>
+  <div id="form-container">
+    <header id="form-header">
+      <h1 id="form-title">NET<span>FLIX</span></h1>
+      <h3 id="form-description">
+        Thank you for signing up at Netflix. Tell us more about yourself.
+      </h3>
+    </header>
+    <section id="survey-form-container">
+      <div id="survey-form">
+        <form action="result.html" method="GET" target="_blank">
+          <div class="input-box">
+            <label for="name">Name</label>
+            <br>
+            <input id="name" type="text" name="name" placeholder="enter your name">
+          </div>
+          <div class="input-box">
+            <label for="age">Age</label>
+            <br>
+            <input id="age" type="text" name="age" placeholder="enter your age">
+          </div>
+          <div class="input-box">
+            <label for="mail">E-mail</label>
+            <br>
+            <input id="mail" type="email" name="email" placeholder="enter your mail adress">
+          </div>
+          <div class="input-box">
+            <label for="content">Content type</label>
+            <br>
+            <select name="content" id="content">
+              <option value="movie" selected>Movie</option>
+              <option value="series">Series</option>
+              <option value="popular">Popular</option>
+            </select>
+          </div>
+          <br>
+          <div class="input-box">
+            <label>Movie Type</label>
+            <br>
+            <input type="checkbox" id="first-check" name="movie1" value="comedy">
+            <label for="first-check">Comedy</label>
+            <br>
+            <input type="checkbox" id="second-check" name="movie2" value="action">
+            <label for="second-check">Action</label>
+            <br>
+            <input type="checkbox" id="third-check" name="movie3" value="romance">
+            <label for="third-check">Romance</label>
+          </div>
+          <br>
+          <div class="input-box">
+            <label for="gender">Gender</label>
+            <br>
+            <input type="radio" id="first-radio" name="gender" value="male">
+            <label for="first-radio">Male</label>
+            <br>
+            <input type="radio" id="second-radio" name="gender" value="female">
+            <label for="second-radio">Female</label>
+            <br>
+            <input type="radio" id="third-radio" name="gender" value="other">
+            <label for="third-radio">Other</label>
+          </div>
+          <div class="input-box">
+            <label for="feedback">Feedback</label>
+            <textarea name="message" id="feedback" cols="30" rows="5" placeholder="any comment" style="resize: none;"></textarea>
+          </div>
+          <div id="form-submit">
+            <button type="submit" id="form-button">Send</button>
+          </div>
+        </form>
 
-        </div>
-      </section>
-    </div>
-  </body>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
