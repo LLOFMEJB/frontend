@@ -1,0 +1,41 @@
+#p1 {
+  width: 500px;
+  height: 250px;
+  border: 5px solid green;
+  background-color: bisque;
+  padding: 10px 150px;
+  box-sizing: border-box;
+  color: brown;
+  line-height: 25px;
+  word-spacing: 25px;
+  text-shadow: 3px 3px;
+}
+h1{
+    text-transform:uppercase;
+    letter-spacing: 2px;
+}
+.tg1 {
+  text-align: center;
+  text-decoration:overline;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+}
+.tg2 {
+  text-align: right;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.tg3 {
+  text-align: start;
+  text-decoration: line-through;
+  letter-spacing: 15px;
+}
+a:hover{
+    color: crimson;
+}
+a:active{
+    color:blue;
+}
+a:link{
+    
+}
